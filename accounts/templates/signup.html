@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+    <div class="row">
+        <br>
+        <br>
+    </div>
+    <div class="row">
+        <div class="col-md-6 offset-3">
+            <form action="/accounts/signup/" method="POST">
+                {% csrf_token %}
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="signuplabel">Username</label>
+                <input type="text" class="form-control" name="username" aria-describedby="emailHelp" placeholder="Enter username" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1" class="signuplabel">Password</label>
+                <input type="password" class="form-control" name="password1" id="exampleInputPassword1" placeholder="Password" required>
+              </div>
+                 <div class="form-group">
+                <label for="exampleInputPassword1" class="signuplabel">Confirm Password</label>
+                <input type="password" class="form-control" name="password2" id="exampleInputPassword1" placeholder="confirm password" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    </div>
+{% endblock %}

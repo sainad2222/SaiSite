@@ -1,0 +1,60 @@
+body{
+  background-color: rgb(177, 207, 247);
+  /* background-image: url('/static/Untitled\ design.png'); */
+}
+button.btn,.btn-info,.btn-outline-success{
+  padding-right: 1.25em;
+  padding-left: 1.25em;
+  margin-right: 1em;
+}
+.navbar-brand > img:nth-child(1){
+  padding-bottom: 0.75em;
+}
+.img-thumbnail{
+  height: 200px;
+}
+body {
+  text-align: center;
+}
+.createform { 
+  margin: 0 auto; 
+  width:500px;
+  }
+.signuplabel,.createlabel{
+  color: rgb(48, 70, 192);
+}
+.taskc{
+  color: red;
+  font-size: large;
+}
+.tasknc{
+  color: rgb(255, 115, 0);
+  font-size: larger;
+}
+.edit,.delete{
+  float: left;
+}
+input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.center-coloumn{
+  background-color: whitesmoke;
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 3px;
+  color: maroon;
+  font-size: 16px;
+  box-shadow: 0px -1px 30px 0px rgba(0,0,0,0.75);
+}
+.item-row{
+  margin: 10px;
+  padding: 20px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 0px -1px 10px -4px rgba(0,0,0,0.75);
+}

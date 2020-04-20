@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div>
+<h2>Create an awesome new article</h2>
+<form class="createform" action="{% url 'articles:create' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    {% for field in form %}
+    <div class="form-group">
+        {{ field.errors }}
+        <label for="{{ field.name }}" class="createlabel">{{ field.label }}</label> 
+        <div class="">{{ field }}</div>
+        
+        <!-- {% if field.help_text %}
+        <p class="help">{{ field.help_text|safe }}</p>
+        {% endif %} -->
+    </div>
+{% endfor %}
+<div class="form-actions">
+        <button type="submit" class="btn btn-primary" >Submit</button>
+    </div>
+
+</form>
+
+</div>
+
+{% endblock  %}
