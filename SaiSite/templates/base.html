@@ -32,6 +32,9 @@
       <li class="nav-item active">
         <a class="nav-link" href="{% url 'todo:home' %}">ToDo</a>
       </li>
+      <li class="nav-item active">
+        <a href="{%url 'todo:portfolio'%}" class="nav-link">Portfolio</a>
+      </li>
     </ul>
       <ul class="navbar-nav ml-auto">
       {% if user.is_authenticated %}

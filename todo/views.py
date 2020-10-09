@@ -13,6 +13,9 @@ def todoHome(request):
         return redirect('/todo')
     return render(request,'todoHome.html',{'tasks':tasks, 'form':form})
 
+def portfolio(request):
+    return render(request,'portfolio.html')
+
 def updateTask(request,pk):
     task = Task.objects.get(id = pk)
     form = TaskForm(instance=task)
