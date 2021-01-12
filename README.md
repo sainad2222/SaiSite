@@ -1,5 +1,5 @@
 # SaiSite
-##### [Visit website](http://sainad.pythonanywhere.com/)
+
 #### Personal website
 ##### merging django apps I learned into one project
 ## Instructions
